@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="Love Ping — a gentle nudge, a little line to send, kept just for Mena.">
+  <title>Love Ping ✦ Love for Mena</title>
+  <link rel="canonical" href="https://menaammarpro.github.io/love-ping/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Love Ping — for Mena">
+  <meta property="og:title" content="Love Ping ✦ Love for Mena">
+  <meta property="og:description" content="A gentle nudge, and a little line to send her.">
+  <meta property="og:url" content="https://menaammarpro.github.io/love-ping/">
+  <meta property="og:image" content="https://menaammarpro.github.io/love-ping/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Love Ping — a nudge and a sweet line">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Love Ping ✦ Love for Mena">
+  <meta name="twitter:description" content="A gentle nudge, and a little line to send her.">
+  <meta name="twitter:image" content="https://menaammarpro.github.io/love-ping/assets/og-image.png">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/theme-main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Love Ping">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">◉ Love Ping</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="#ping">Ping</a>
+      <a href="#how">How it works</a>
+      <a href="#details">Details</a>
+      <a href="https://menaammarpro.github.io/loveformymena/">Our little universe ↗</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero ping-hero">
+      <p class="eyebrow">A LITTLE NUDGE</p>
+      <div class="moon" aria-hidden="true">◉</div>
+      <p class="small-caption">Press it whenever she crosses your mind.</p>
+      <h1>Love <span>ping.</span></h1>
+      <p class="hero-description">
+        Sometimes you just want to say <em>I'm thinking of you</em> and no more.
+        Press the circle and I'll hand you a little line to send her — never
+        the same one twice in a row.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#ping">Send a ping <span>♥</span></a>
+        <a class="button button-ghost" href="#how">How it works</a>
+      </div>
+      <p class="signature">Made with love, just for you <span>♥</span></p>
+    </section>
+
+    <section class="section" id="ping">
+      <p class="eyebrow">READY WHEN YOU ARE</p>
+      <h2>The <span>ping.</span></h2>
+      <div class="ping-stage">
+        <button class="ping-button" id="ping-button" type="button" aria-label="Send a love ping">
+          <span class="ping-heart" aria-hidden="true">♥</span>
+          <span class="ping-label">Ping her</span>
+        </button>
+        <div class="ping-stats">
+          <span class="ping-chip"><strong id="ping-count">0</strong> today</span>
+          <span class="ping-chip"><strong id="ping-total">0</strong> all time</span>
+          <span class="ping-chip" id="ping-last">No pings yet</span>
+        </div>
+      </div>
+      <div class="ping-message-wrap" id="ping-message-wrap" hidden>
+        <p class="ping-message" id="ping-message" aria-live="polite"></p>
+        <button class="button button-ghost" id="copy-ping" type="button">Copy this line</button>
+      </div>
+      <p class="section-note" id="ping-note" aria-live="polite"></p>
+      <h3 class="ping-sub">Recent pings</h3>
+      <ul class="ping-history" id="history-list"></ul>
+    </section>
+
+    <section class="section" id="how">
+      <p class="eyebrow">GENTLY</p>
+      <h2>How it <span>works.</span></h2>
+      <div class="how-grid">
+        <div class="how-card">
+          <span class="how-mark" aria-hidden="true">◉</span>
+          <h3>Press</h3>
+          <p>Each press is a ping — a small thought of her, counted and kept on this device.</p>
+        </div>
+        <div class="how-card">
+          <span class="how-mark" aria-hidden="true">♥</span>
+          <h3>Send</h3>
+          <p>You get a fresh line to send her. Copy it and paste it wherever you two talk.</p>
+        </div>
+        <div class="how-card">
+          <span class="how-mark" aria-hidden="true">✦</span>
+          <h3>Look back</h3>
+          <p>Recent pings and a running count show how often she's on your mind.</p>
+        </div>
+      </div>
+      <p class="section-copy">Nothing is sent anywhere by this page — it only helps you say it.</p>
+    </section>
+
+    <section class="section" id="details">
+      <p class="eyebrow">JUST FOR US</p>
+      <h2>Details.</h2>
+      <div class="settings-actions">
+        <button class="button button-ghost" id="share-button" type="button">Share this page</button>
+        <button class="button button-ghost" id="reset-pings" type="button">Clear the pings</button>
+      </div>
+      <p class="settings-note" id="save-note" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care <span>♥</span> for Mena</p>
+    <p class="footer-small">A little universe of its own ✦</p>
+  </footer>
+</body>
+</html>

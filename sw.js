@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE = "love-ping-v1";
+const CACHE = "love-ping-v2";
 
 const ASSETS = [
   "./",
